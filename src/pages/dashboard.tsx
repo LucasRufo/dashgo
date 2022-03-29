@@ -65,19 +65,15 @@ const series = [
 
 export default function Dashboard() {
   return (
-    <Flex
-      direction="column"
-      h="100vh"
-    >
+    <Flex direction="column" h="100vh" >
       <Header />
 
       <Flex
         w="100%"
         maxW={1440}
-        pr="6"
-        // px="6"
-        mx="auto"
+        px="6"
         my="6"
+        mx="auto"
       >
         <Sidebar />
 
@@ -88,7 +84,7 @@ export default function Dashboard() {
           alignItems="flex-start"
         >
           <Box
-            p="8"
+            p={["6", "8"]}
             bg="gray.800"
             borderRadius={8}
             pb="4"
